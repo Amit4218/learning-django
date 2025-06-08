@@ -1,0 +1,20 @@
+{% extends "base.html" %} 
+
+{% block title %} 
+chai page
+{% endblock %}
+
+{% block content %}
+<h1>Welcome to app_test chai page</h1>
+
+{% for chai in chais %}
+  <div class="chai-item">
+    <img src="{{ chai.image.url }}" alt="{{ chai.name }}">
+    <h3>{{ chai.name }}</h3>
+    <p>{{ chai.description }}</p>
+    <a href="{% url 'chai_details' chai.id %}">Details</a>
+  </div>
+
+{% endfor %}
+
+{% endblock %}

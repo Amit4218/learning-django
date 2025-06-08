@@ -49,6 +49,9 @@ INTERNAL_IPS = ["127.0.0.1"]
 
 NPM_BIN_PATH = '/home/infinite/.nvm/versions/node/v22.15.0/bin/npm'
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
